@@ -85,18 +85,13 @@
       }
       // Populate the calendar
       result += '<div class="day">' + dayOfMonth + '</div>';
-      // Add padding on to the end of the last row.
+      // Add padding on to the end of the last row and close it.
       if (dayOfMonth === numDays){
         result += createPaddingDivs(6 - daysOfTheWeek.indexOf(dayOfWeek));
-        // Close the row;
         result += '</div>';
-      }else if ( dayOfWeek === 'Sat') {
-                result += '</div>';
+      }else if (dayOfWeek === 'Sat') {
+        result += '</div>';
       }
-      // // Close the row tag
-      // if ( dayOfWeek === 'Sat'){
-      //   result += '</div>';
-      // }
       return result;
     }, '');
     $(this.selector)
