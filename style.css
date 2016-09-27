@@ -48,6 +48,11 @@ body {
 .control {
   display: inline-block;
   width: 50%;
+  text-decoration: underline;
+}
+
+.control:hover {
+  cursor: pointer;
 }
 
 .prev {
