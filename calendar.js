@@ -90,11 +90,13 @@
         result += createPaddingDivs(6 - daysOfTheWeek.indexOf(dayOfWeek));
         // Close the row;
         result += '</div>';
+      }else if ( dayOfWeek === 'Sat') {
+                result += '</div>';
       }
-      // Close the row tag
-      if ( dayOfWeek === 'Sat'){
-        result += '</div>';
-      }
+      // // Close the row tag
+      // if ( dayOfWeek === 'Sat'){
+      //   result += '</div>';
+      // }
       return result;
     }, '');
     $(this.selector)
